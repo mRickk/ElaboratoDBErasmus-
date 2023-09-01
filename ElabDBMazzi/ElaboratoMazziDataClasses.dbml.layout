@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 17, 15.25" name="ElaboratoMazziDataClasses">
+  <DataContextMoniker Name="/ElaboratoMazziDataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="bc3677a0-ceff-4862-bafc-a060c3a10a0c" absoluteBounds="14.75, 7, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Accordi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ddddfa3a-06e5-4e0a-8a00-be01f3105c03" absoluteBounds="14.765, 7.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3c988d28-815a-44eb-903a-02726b392e6a" absoluteBounds="6.25, 8.875, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Alloggi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8555ea3d-9852-4391-95dd-0eeeb1651bcc" absoluteBounds="6.265, 9.335, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5d87c9ae-97b0-4704-ad48-f55ca51c9c53" absoluteBounds="9, 1.375, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Ambiti" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc2b947f-68e3-47db-b390-7a7a64951978" absoluteBounds="9.015, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8bc72ca0-0a14-46e4-85ce-7ce5e51ed950" absoluteBounds="6.25, 4.5, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Aziende" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4ae2151d-364f-4731-b251-aa13e70d99b6" absoluteBounds="6.265, 4.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1400a0fb-57f6-4550-8af3-3561fc7e72e0" absoluteBounds="6.25, 1.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Campi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a608aee5-ad10-42ce-9e85-27553d29918b" absoluteBounds="6.265, 1.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="62a67e99-4b4c-41b2-b4d7-29fa623a1215" absoluteBounds="11.75, 8.25, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Candidature" />
+      <nestedChildShapes>
+        <elementListCompartment Id="92d4fe00-553e-4ed3-9ab0-215a64246d3b" absoluteBounds="11.765, 8.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="169505aa-b040-4db6-8ef3-b9d2ebbac583" absoluteBounds="11.75, 5.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Coperture" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d11e9ce0-cdb1-4422-b319-34780f253b0e" absoluteBounds="11.765, 5.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a5ffab3d-708d-42e1-92ed-02aec799c90f" absoluteBounds="3.5, 5.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Intermediari" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a15f3600-cf4c-4f5e-b5c4-ac089af2ff86" absoluteBounds="3.515, 5.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8a93d7a0-d3dc-4b71-8c7a-5423b7042027" absoluteBounds="3.5, 7.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Locatori" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f18b4065-be07-40a0-9e58-943ad81e5294" absoluteBounds="3.515, 7.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bec47ffc-cd59-43ab-b4ea-861a41a20354" absoluteBounds="0.75, 7, 2, 2.9247054036458318">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Persone" />
+      <nestedChildShapes>
+        <elementListCompartment Id="270b92c5-9296-4373-811d-da04bd5df352" absoluteBounds="0.765, 7.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ede2d0e3-47d1-421c-b462-6a8f9b29c776" absoluteBounds="9, 13, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Prenotazioni" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a821253f-6067-4ab6-b96d-3c6eb5387a3d" absoluteBounds="9.015, 13.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c4d2780-bf80-4337-8847-e8aee838e546" absoluteBounds="9, 10.125, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Richieste" />
+      <nestedChildShapes>
+        <elementListCompartment Id="efff39a2-5978-4c20-8096-290c2f3cdaf5" absoluteBounds="9.015, 10.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6b184876-452e-4399-9bb9-690adbd3dec0" absoluteBounds="3.5, 2.25, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Settori" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f14bdfa-d20f-469a-a55b-d2b75bf1e18a" absoluteBounds="3.515, 2.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="02f4170b-088f-44fe-8dbb-71cd521a3361" absoluteBounds="3.5, 9.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Studenti" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9ecd0788-5f3f-4273-bb03-42973fe74285" absoluteBounds="3.515, 9.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="520675d3-561d-408c-af1f-7469fc44a495" absoluteBounds="3.5, 12.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Tipologie" />
+      <nestedChildShapes>
+        <elementListCompartment Id="04df5c5d-9c3f-4aca-bfc6-d990bd7f773d" absoluteBounds="3.515, 12.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ebc73c27-ec3f-4acf-863c-274e0af4acec" absoluteBounds="9, 4.375, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/ElaboratoMazziDataClassesDataContext/Tirocini" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c828aec9-b8bf-46cd-86fa-f978f900a9ae" absoluteBounds="9.015, 4.835, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.25 : 2.09699625651042); (9 : 2.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Campi/Campi_Ambiti" />
+      <nodes>
+        <classShapeMoniker Id="1400a0fb-57f6-4550-8af3-3561fc7e72e0" />
+        <classShapeMoniker Id="5d87c9ae-97b0-4704-ad48-f55ca51c9c53" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 2.06814697265625); (12.75 : 2.06814697265625); (12.75 : 5.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Ambiti/Ambiti_Coperture" />
+      <nodes>
+        <classShapeMoniker Id="5d87c9ae-97b0-4704-ad48-f55ca51c9c53" />
+        <classShapeMoniker Id="169505aa-b040-4db6-8ef3-b9d2ebbac583" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.09699625651042); (6.25 : 6.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Intermediari/Intermediari_Aziende" />
+      <nodes>
+        <classShapeMoniker Id="a5ffab3d-708d-42e1-92ed-02aec799c90f" />
+        <classShapeMoniker Id="8bc72ca0-0a14-46e4-85ce-7ce5e51ed950" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.69307305724159); (5.875 : 9.06807305724159); (5.875 : 8.5); (6.06607443490112 : 8.69107443490112 : JumpStart); (6.18392556509888 : 8.80892556509888 : JumpEnd); (6.25 : 8.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Locatori/Locatori_Alloggi" />
+      <nodes>
+        <classShapeMoniker Id="8a93d7a0-d3dc-4b71-8c7a-5423b7042027" />
+        <classShapeMoniker Id="3c988d28-815a-44eb-903a-02726b392e6a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 7); (1.75 : 6.09699625651042); (3.5 : 6.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Persone/Persone_Intermediari" />
+      <nodes>
+        <classShapeMoniker Id="bec47ffc-cd59-43ab-b4ea-861a41a20354" />
+        <classShapeMoniker Id="a5ffab3d-708d-42e1-92ed-02aec799c90f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.09699625651042); (3.5 : 8.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Persone/Persone_Locatori" />
+      <nodes>
+        <classShapeMoniker Id="bec47ffc-cd59-43ab-b4ea-861a41a20354" />
+        <classShapeMoniker Id="8a93d7a0-d3dc-4b71-8c7a-5423b7042027" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 13.1458154296875); (7.25 : 14.0545073359375); (9 : 14.0545073359375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Alloggi/Alloggi_Prenotazioni" />
+      <nodes>
+        <classShapeMoniker Id="3c988d28-815a-44eb-903a-02726b392e6a" />
+        <classShapeMoniker Id="ede2d0e3-47d1-421c-b462-6a8f9b29c776" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 11.0104484049479); (9 : 11.0104484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Alloggi/Alloggi_Richieste" />
+      <nodes>
+        <classShapeMoniker Id="3c988d28-815a-44eb-903a-02726b392e6a" />
+        <classShapeMoniker Id="6c4d2780-bf80-4337-8847-e8aee838e546" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.02089680989583); (5.875 : 4.39589680989583); (5.875 : 4.125); (6.25 : 4.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Settori/Settori_Aziende" />
+      <nodes>
+        <classShapeMoniker Id="6b184876-452e-4399-9bb9-690adbd3dec0" />
+        <classShapeMoniker Id="8bc72ca0-0a14-46e4-85ce-7ce5e51ed950" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 9.375); (4.5 : 8.94399251302083); (5.75 : 8.94399251302083); (5.75 : 8.12660970052083); (10.4166666666667 : 8.12660970052083 : JumpStart); (10.5833333333333 : 8.12660970052083 : JumpEnd); (11.5 : 8.12660970052083); (11.5 : 7.5937505); (14.75 : 7.5937505)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Studenti/Studenti_Accordi" />
+      <nodes>
+        <classShapeMoniker Id="02f4170b-088f-44fe-8dbb-71cd521a3361" />
+        <classShapeMoniker Id="bc3677a0-ceff-4862-bafc-a060c3a10a0c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.031252 : 9.375); (5.031252 : 9.06814697265625); (6 : 9.06814697265625); (6 : 8.625); (6.04166666666667 : 8.625 : JumpStart); (6.20833333333333 : 8.625 : JumpEnd); (9.91666666666667 : 8.625 : JumpStart); (10.0833333333333 : 8.625 : JumpEnd); (10.4166666666667 : 8.625 : JumpStart); (10.5833333333333 : 8.625 : JumpEnd); (11.375 : 8.625); (11.375 : 8.94314697265625); (11.75 : 8.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Studenti/Studenti_Candidature" />
+      <nodes>
+        <classShapeMoniker Id="02f4170b-088f-44fe-8dbb-71cd521a3361" />
+        <classShapeMoniker Id="62a67e99-4b4c-41b2-b4d7-29fa623a1215" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.5304996744792); (5.875 : 11.9054996744792); (5.875 : 14.5401047890625); (9 : 14.5401047890625)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Studenti/Studenti_Prenotazioni" />
+      <nodes>
+        <classShapeMoniker Id="02f4170b-088f-44fe-8dbb-71cd521a3361" />
+        <classShapeMoniker Id="ede2d0e3-47d1-421c-b462-6a8f9b29c776" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.4214978372396); (6.125 : 10.4214978372396); (6.125 : 8.375); (10 : 8.375); (10 : 10.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Studenti/Studenti_Richieste" />
+      <nodes>
+        <classShapeMoniker Id="02f4170b-088f-44fe-8dbb-71cd521a3361" />
+        <classShapeMoniker Id="6c4d2780-bf80-4337-8847-e8aee838e546" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.64985270182292); (3.5 : 9.64985270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Persone/Persone_Studenti" />
+      <nodes>
+        <classShapeMoniker Id="bec47ffc-cd59-43ab-b4ea-861a41a20354" />
+        <classShapeMoniker Id="02f4170b-088f-44fe-8dbb-71cd521a3361" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 12.8229077148437); (5.79166666666667 : 12.8229077148437 : JumpStart); (5.95833333333333 : 12.8229077148437 : JumpEnd); (6.25 : 12.8229077148437)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Tipologie/Tipologie_Alloggi" />
+      <nodes>
+        <classShapeMoniker Id="520675d3-561d-408c-af1f-7469fc44a495" />
+        <classShapeMoniker Id="3c988d28-815a-44eb-903a-02726b392e6a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 7.23437525); (14.75 : 7.23437525)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Tirocini/Tirocini_Accordi" />
+      <nodes>
+        <classShapeMoniker Id="ebc73c27-ec3f-4acf-863c-274e0af4acec" />
+        <classShapeMoniker Id="bc3677a0-ceff-4862-bafc-a060c3a10a0c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.5 : 7.87660970052083); (10.5 : 9.32097295898437); (11.75 : 9.32097295898437)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Tirocini/Tirocini_Candidature" />
+      <nodes>
+        <classShapeMoniker Id="ebc73c27-ec3f-4acf-863c-274e0af4acec" />
+        <classShapeMoniker Id="62a67e99-4b4c-41b2-b4d7-29fa623a1215" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 6.09699625651042); (11.75 : 6.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Tirocini/Tirocini_Coperture" />
+      <nodes>
+        <classShapeMoniker Id="ebc73c27-ec3f-4acf-863c-274e0af4acec" />
+        <classShapeMoniker Id="169505aa-b040-4db6-8ef3-b9d2ebbac583" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 6.05850341796875); (9 : 6.05850341796875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ElaboratoMazziDataClassesDataContext/Aziende/Aziende_Tirocini" />
+      <nodes>
+        <classShapeMoniker Id="8bc72ca0-0a14-46e4-85ce-7ce5e51ed950" />
+        <classShapeMoniker Id="ebc73c27-ec3f-4acf-863c-274e0af4acec" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

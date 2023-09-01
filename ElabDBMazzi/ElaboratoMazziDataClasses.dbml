@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="elaboratodbmazzi" Class="ElaboratoMazziDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MSI\SQLEXPRESS;Initial Catalog=elaboratodbmazzi;Integrated Security=True" SettingsObjectName="ElabDBMazzi.Properties.Settings" SettingsPropertyName="elaboratodbmazziConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Accordi" Member="Accordi">
+    <Type Name="Accordi">
+      <Column Name="CodAccordo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DataInizio" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DataFine" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CodStudente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodTirocinio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Studenti_Accordi" Member="Studenti" ThisKey="CodStudente" OtherKey="CodStudente" Type="Studenti" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Tirocini_Accordi" Member="Tirocini" ThisKey="CodTirocinio" OtherKey="CodTirocinio" Type="Tirocini" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Alloggi" Member="Alloggi">
+    <Type Name="Alloggi">
+      <Column Name="CodAlloggio" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titolo" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Stato" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Citta" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="CodPostale" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="Quartiere" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="Via" Type="System.String" DbType="VarChar(64)" CanBeNull="true" />
+      <Column Name="NumCivico" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Piano" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Interno" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumPosti" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="CostoAffitto" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Arredato" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CostoServizi" Type="System.Decimal" DbType="SmallMoney" CanBeNull="true" />
+      <Column Name="Commissione" Type="System.Decimal" DbType="SmallMoney" CanBeNull="true" />
+      <Column Name="Caparra" Type="System.Decimal" DbType="SmallMoney" CanBeNull="true" />
+      <Column Name="CodLocatore" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodTipologia" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Association Name="Alloggi_Prenotazioni" Member="Prenotazioni" ThisKey="CodAlloggio" OtherKey="CodAlloggio" Type="Prenotazioni" />
+      <Association Name="Alloggi_Richieste" Member="Richieste" ThisKey="CodAlloggio" OtherKey="CodAlloggio" Type="Richieste" />
+      <Association Name="Locatori_Alloggi" Member="Locatori" ThisKey="CodLocatore" OtherKey="CodLocatore" Type="Locatori" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Tipologie_Alloggi" Member="Tipologie" ThisKey="CodTipologia" OtherKey="CodTipologia" Type="Tipologie" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Ambiti" Member="Ambiti">
+    <Type Name="Ambiti">
+      <Column Name="CodAmbito" Type="System.Double" DbType="Float NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descrizione" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CodCampo" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="Ambiti_Coperture" Member="Coperture" ThisKey="CodAmbito" OtherKey="CodAmbito" Type="Coperture" />
+      <Association Name="Campi_Ambiti" Member="Campi" ThisKey="CodCampo" OtherKey="CodCampo" Type="Campi" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Aziende" Member="Aziende">
+    <Type Name="Aziende">
+      <Column Name="CodVAT" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Stato" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Citta" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="CodPostale" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="Via" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="NumCivico" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SitoWeb" Type="System.String" DbType="VarChar(64)" CanBeNull="true" />
+      <Column Name="Mail" Type="System.String" DbType="VarChar(64)" CanBeNull="true" />
+      <Column Name="Telefono" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="CodIntermediario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodNACE" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Association Name="Aziende_Tirocini" Member="Tirocini" ThisKey="CodVAT" OtherKey="CodVAT" Type="Tirocini" />
+      <Association Name="Intermediari_Aziende" Member="Intermediari" ThisKey="CodIntermediario" OtherKey="CodIntermediario" Type="Intermediari" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Settori_Aziende" Member="Settori" ThisKey="CodNACE" OtherKey="CodNACE" Type="Settori" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Campi" Member="Campi">
+    <Type Name="Campi">
+      <Column Name="CodCampo" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descrizione" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Campi_Ambiti" Member="Ambiti" ThisKey="CodCampo" OtherKey="CodCampo" Type="Ambiti" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Candidature" Member="Candidature">
+    <Type Name="Candidature">
+      <Column Name="CodStudente" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CodTirocinio" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Accettata" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Studenti_Candidature" Member="Studenti" ThisKey="CodStudente" OtherKey="CodStudente" Type="Studenti" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Tirocini_Candidature" Member="Tirocini" ThisKey="CodTirocinio" OtherKey="CodTirocinio" Type="Tirocini" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Coperture" Member="Coperture">
+    <Type Name="Coperture">
+      <Column Name="CodAmbito" Type="System.Double" DbType="Float NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CodTirocinio" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Ambiti_Coperture" Member="Ambiti" ThisKey="CodAmbito" OtherKey="CodAmbito" Type="Ambiti" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Tirocini_Coperture" Member="Tirocini" ThisKey="CodTirocinio" OtherKey="CodTirocinio" Type="Tirocini" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Intermediari" Member="Intermediari">
+    <Type Name="Intermediari">
+      <Column Name="CodIntermediario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CF" Type="System.String" DbType="Char(16) NOT NULL" CanBeNull="false" />
+      <Association Name="Intermediari_Aziende" Member="Aziende" ThisKey="CodIntermediario" OtherKey="CodIntermediario" Type="Aziende" />
+      <Association Name="Persone_Intermediari" Member="Persone" ThisKey="CF" OtherKey="CF" Type="Persone" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Locatori" Member="Locatori">
+    <Type Name="Locatori">
+      <Column Name="CodLocatore" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CF" Type="System.String" DbType="Char(16) NOT NULL" CanBeNull="false" />
+      <Association Name="Locatori_Alloggi" Member="Alloggi" ThisKey="CodLocatore" OtherKey="CodLocatore" Type="Alloggi" />
+      <Association Name="Persone_Locatori" Member="Persone" ThisKey="CF" OtherKey="CF" Type="Persone" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Persone" Member="Persone">
+    <Type Name="Persone">
+      <Column Name="CF" Type="System.String" DbType="Char(16) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Cognome" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Mail" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.String" DbType="VarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="DataNascita" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Stato" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Citta" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="CodPostale" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="Via" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="NumCivico" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Persone_Intermediari" Member="Intermediari" ThisKey="CF" OtherKey="CF" Type="Intermediari" />
+      <Association Name="Persone_Locatori" Member="Locatori" ThisKey="CF" OtherKey="CF" Type="Locatori" />
+      <Association Name="Persone_Studenti" Member="Studenti" ThisKey="CF" OtherKey="CF" Type="Studenti" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Prenotazioni" Member="Prenotazioni">
+    <Type Name="Prenotazioni">
+      <Column Name="CodPrenotazione" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DataInizio" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DataFine" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DataPrenotazione" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CodStudente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodAlloggio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Alloggi_Prenotazioni" Member="Alloggi" ThisKey="CodAlloggio" OtherKey="CodAlloggio" Type="Alloggi" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Studenti_Prenotazioni" Member="Studenti" ThisKey="CodStudente" OtherKey="CodStudente" Type="Studenti" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Richieste" Member="Richieste">
+    <Type Name="Richieste">
+      <Column Name="CodAlloggio" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CodStudente" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataInizio" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataFine" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Accettata" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Alloggi_Richieste" Member="Alloggi" ThisKey="CodAlloggio" OtherKey="CodAlloggio" Type="Alloggi" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Studenti_Richieste" Member="Studenti" ThisKey="CodStudente" OtherKey="CodStudente" Type="Studenti" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Settori" Member="Settori">
+    <Type Name="Settori">
+      <Column Name="CodNACE" Type="System.String" DbType="VarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descrizione" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="CodCapitolo" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="CodSezione" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="CodParagrafo" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Association Name="Settori_Aziende" Member="Aziende" ThisKey="CodNACE" OtherKey="CodNACE" Type="Aziende" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Studenti" Member="Studenti">
+    <Type Name="Studenti">
+      <Column Name="CodStudente" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CF" Type="System.String" DbType="Char(16) NOT NULL" CanBeNull="false" />
+      <Column Name="NumMatricola" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Universita" Type="System.String" DbType="Char(64) NOT NULL" CanBeNull="false" />
+      <Column Name="CodCorso" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="AnnoImmatricolazione" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CV" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Studenti_Accordi" Member="Accordi" ThisKey="CodStudente" OtherKey="CodStudente" Type="Accordi" />
+      <Association Name="Studenti_Candidature" Member="Candidature" ThisKey="CodStudente" OtherKey="CodStudente" Type="Candidature" />
+      <Association Name="Studenti_Prenotazioni" Member="Prenotazioni" ThisKey="CodStudente" OtherKey="CodStudente" Type="Prenotazioni" />
+      <Association Name="Studenti_Richieste" Member="Richieste" ThisKey="CodStudente" OtherKey="CodStudente" Type="Richieste" />
+      <Association Name="Persone_Studenti" Member="Persone" ThisKey="CF" OtherKey="CF" Type="Persone" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tipologie" Member="Tipologie">
+    <Type Name="Tipologie">
+      <Column Name="CodTipologia" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Association Name="Tipologie_Alloggi" Member="Alloggi" ThisKey="CodTipologia" OtherKey="CodTipologia" Type="Alloggi" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tirocini" Member="Tirocini">
+    <Type Name="Tirocini">
+      <Column Name="CodTirocinio" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titolo" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Stato" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Citta" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="CodPostale" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="Via" Type="System.String" DbType="VarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="NumCivico" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PostiDisponibili" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="InizioPeriodo" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="FinePeriodo" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="MinDurata" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="DataScadenza" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Stipendio" Type="System.Decimal" DbType="SmallMoney" CanBeNull="true" />
+      <Column Name="CodVAT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Tirocini_Accordi" Member="Accordi" ThisKey="CodTirocinio" OtherKey="CodTirocinio" Type="Accordi" />
+      <Association Name="Tirocini_Candidature" Member="Candidature" ThisKey="CodTirocinio" OtherKey="CodTirocinio" Type="Candidature" />
+      <Association Name="Tirocini_Coperture" Member="Coperture" ThisKey="CodTirocinio" OtherKey="CodTirocinio" Type="Coperture" />
+      <Association Name="Aziende_Tirocini" Member="Aziende" ThisKey="CodVAT" OtherKey="CodVAT" Type="Aziende" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>
