@@ -1,4 +1,5 @@
-Scroll down for English version. Database and application use Italian language because it is required for the university project.
+Scroll down for English version.
+The use of Italian language in database and application is required for the university project.
 
 
 IT
